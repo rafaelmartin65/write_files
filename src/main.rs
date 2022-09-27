@@ -1,4 +1,5 @@
 use std::fs;
+use std::io::prelude::*;
 
 fn main() {
     let mut speech = String::new();
@@ -9,5 +10,8 @@ fn main() {
 
 
     fs::write("speech.txt", speech);
-    
+
+    let mut f = fs::OpenOptions::new().append(true).open("planets.txt").unwrap();
+    f.write(b"\nPluto");
+
 }
