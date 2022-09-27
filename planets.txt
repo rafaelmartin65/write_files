@@ -3,6 +3,7 @@ Venus
 Earth
 Mars
 Jupiter
-Urano
+Saturn
+Uranus
 Neptune
 Pluto
